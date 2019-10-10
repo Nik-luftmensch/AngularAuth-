@@ -5,9 +5,7 @@ import { TestBed }      from '@angular/core/testing';
 
 import { By }           from '@angular/platform-browser';
 
-////////  SPECS  /////////////
 
-/// Delete this
 describe('Smoke test', () => {
   it('should run a passing test', () => {
     expect(true).toEqual(true, 'should pass');
@@ -28,9 +26,9 @@ describe('AppComponent with TCB', function () {
     let fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
 
-    let h1 = fixture.debugElement.query(el => el.name === 'h1').nativeElement;  // it works
+    let h1 = fixture.debugElement.query(el => el.name === 'h1').nativeElement; 
 
-        h1 = fixture.debugElement.query(By.css('h1')).nativeElement;            // preferred
+        h1 = fixture.debugElement.query(By.css('h1')).nativeElement;          
 
     expect(h1.innerText).toMatch(/angular app/i, '<h1> should say something about "Angular App"');
   });

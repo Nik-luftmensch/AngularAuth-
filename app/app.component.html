@@ -18,11 +18,11 @@
             <li><a routerLink="/profile" *ngIf="auth.authenticated()">Profile</a></li>
             <li><a href="#" (click)="auth.logout()" *ngIf="auth.authenticated()">Logout</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
     <div class="container">
       <router-outlet></router-outlet>
-    </div><!-- /.container -->
+    </div>
 
